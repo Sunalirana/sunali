@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderBot - Track Your Orders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>OrderBot</h1>
+            </div>
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Online</span>
+            </div>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-area" id="chatArea">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <div class="avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="text">
+                        Hello! I'm your order assistant. How can I help you today?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <button class="action-btn" title="Track Another Order">
+                <i class="fas fa-search"></i>
+                <span>Track Order</span>
+            </button>
+            <button class="action-btn" title="View Order History">
+                <i class="fas fa-history"></i>
+                <span>History</span>
+            </button>
+            <button class="action-btn" title="Change Delivery Address">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Address</span>
+            </button>
+            <button class="action-btn" title="Chat with Agent">
+                <i class="fas fa-headset"></i>
+                <span>Support</span>
+            </button>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <div class="input-container">
+                <textarea 
+                    id="userInput" 
+                    placeholder="Enter Order ID or ask me anything..."
+                    rows="1"
+                ></textarea>
+                <button class="voice-input" title="Voice Input">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button class="send-btn" id="sendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <button class="theme-toggle" title="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
